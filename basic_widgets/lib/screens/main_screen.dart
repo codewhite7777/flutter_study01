@@ -72,6 +72,24 @@ class MainScreen extends StatelessWidget {
             },
             child: Text('BottomNavigationBar Widget'),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed('/center');
+            },
+            child: Text('Center Widget'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed('/padding');
+            },
+            child: Text('Padding Widget'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed('/align');
+            },
+            child: Text('Align Widget'),
+          ),
         ],
       ),
     );

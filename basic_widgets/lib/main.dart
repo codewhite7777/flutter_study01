@@ -144,6 +144,27 @@ class MyApp extends StatelessWidget {
         '/bottomnavigationbar': (BuilcContext) => BottomNavigationScreen(
               appbarTitle: 'BottomNavigationBar',
             ),
+        '/center': (BuilcContext) => DefaultLayoutScreen(
+              appbarTitle: 'Center',
+              child: Center(
+                child: CustomContainer(),
+              ),
+            ),
+        '/padding': (BuilcContext) => DefaultLayoutScreen(
+              appbarTitle: 'Padding',
+              child: Padding(
+                padding: EdgeInsets.all(40.0),
+                child: CustomContainer(
+                    height: double.infinity, width: double.infinity),
+              ),
+            ),
+        '/align': (BuilcContext) => DefaultLayoutScreen(
+              appbarTitle: 'Align',
+              child: Align(
+                alignment: Alignment.bottomRight,
+                child: CustomContainer(),
+              ),
+            ),
       },
     );
   }
