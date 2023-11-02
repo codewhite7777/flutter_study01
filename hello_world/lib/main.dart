@@ -40,15 +40,17 @@ class _MyHomeState extends State<MyHome> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          if (title == 'Hello') {
-            setState(() {
-              title = 'World';
-            });
-          }
-        },
+        onPressed: onPressed,
         child: const Icon(Icons.abc),
       ),
     );
+  }
+
+  void onPressed() {
+    if (title == 'Hello') {
+      setState(() {
+        title = 'World';
+      });
+    }
   }
 }
