@@ -126,6 +126,16 @@ class MyApp extends StatelessWidget {
                 crossAxisCount: 2,
               ),
             ),
+        '/pageview': (BuildContext) => DefaultLayoutScreen(
+              appbarTitle: 'PageView',
+              child: PageView(
+                children: [
+                  CustomContainer(color: Colors.redAccent),
+                  CustomContainer(color: Colors.greenAccent),
+                  CustomContainer(color: Colors.blueAccent),
+                ],
+              ),
+            ),
       },
     );
   }

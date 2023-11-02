@@ -54,6 +54,12 @@ class MainScreen extends StatelessWidget {
             },
             child: Text('GridView Widget'),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed('/pageview');
+            },
+            child: Text('PageView Widget'),
+          ),
         ],
       ),
     );
