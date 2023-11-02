@@ -60,6 +60,12 @@ class MainScreen extends StatelessWidget {
             },
             child: Text('PageView Widget'),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed('/tabbar');
+            },
+            child: Text('TabBar Widget'),
+          ),
         ],
       ),
     );

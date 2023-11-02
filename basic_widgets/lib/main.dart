@@ -1,8 +1,9 @@
 import 'dart:math';
 
 import 'package:basic_widgets/component/custom_container.dart';
-import 'package:basic_widgets/screens/default_layout.dart';
+import 'package:basic_widgets/screens/default_layout_screen.dart';
 import 'package:basic_widgets/screens/main_screen.dart';
+import 'package:basic_widgets/screens/tabbar_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -135,6 +136,9 @@ class MyApp extends StatelessWidget {
                   CustomContainer(color: Colors.blueAccent),
                 ],
               ),
+            ),
+        '/tabbar': (BuildContext) => TabBarScreen(
+              appbarTitle: 'TabBar, TabBarView',
             ),
       },
     );
