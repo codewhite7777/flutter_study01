@@ -165,6 +165,32 @@ class MyApp extends StatelessWidget {
                 child: CustomContainer(),
               ),
             ),
+        '/expanded': (BuilcContext) => DefaultLayoutScreen(
+              appbarTitle: 'Expanded',
+              child: Column(
+                children: [
+                  Expanded(
+                    flex: 2,
+                    child: CustomContainer(
+                      width: double.infinity,
+                      color: Colors.red,
+                    ),
+                  ),
+                  Expanded(
+                    child: CustomContainer(
+                      width: double.infinity,
+                      color: Colors.blue,
+                    ),
+                  ),
+                  Expanded(
+                    child: CustomContainer(
+                      width: double.infinity,
+                      color: Colors.green,
+                    ),
+                  ),
+                ],
+              ),
+            ),
       },
     );
   }

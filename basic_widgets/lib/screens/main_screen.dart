@@ -90,6 +90,12 @@ class MainScreen extends StatelessWidget {
             },
             child: Text('Align Widget'),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed('/expanded');
+            },
+            child: Text('Expanded Widget'),
+          ),
         ],
       ),
     );
