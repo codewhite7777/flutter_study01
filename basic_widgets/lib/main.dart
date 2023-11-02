@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:basic_widgets/component/custom_container.dart';
 import 'package:basic_widgets/screens/default_layout.dart';
 import 'package:basic_widgets/screens/main_screen.dart';
@@ -110,6 +112,18 @@ class MyApp extends StatelessWidget {
                     onTap: () {},
                   ),
                 ],
+              ),
+            ),
+        '/gridview': (BuildContext) => DefaultLayoutScreen(
+              appbarTitle: 'GridView',
+              child: GridView.count(
+                children: [
+                  ...List.generate(
+                    3,
+                    (index) => CustomContainer(),
+                  ),
+                ],
+                crossAxisCount: 2,
               ),
             ),
       },
