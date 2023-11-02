@@ -66,6 +66,12 @@ class MainScreen extends StatelessWidget {
             },
             child: Text('TabBar Widget'),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed('/bottomnavigationbar');
+            },
+            child: Text('BottomNavigationBar Widget'),
+          ),
         ],
       ),
     );

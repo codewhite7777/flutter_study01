@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:basic_widgets/component/custom_container.dart';
+import 'package:basic_widgets/screens/bottom_navigation_screen.dart';
 import 'package:basic_widgets/screens/default_layout_screen.dart';
 import 'package:basic_widgets/screens/main_screen.dart';
 import 'package:basic_widgets/screens/tabbar_screen.dart';
@@ -139,6 +140,9 @@ class MyApp extends StatelessWidget {
             ),
         '/tabbar': (BuildContext) => TabBarScreen(
               appbarTitle: 'TabBar, TabBarView',
+            ),
+        '/bottomnavigationbar': (BuilcContext) => BottomNavigationScreen(
+              appbarTitle: 'BottomNavigationBar',
             ),
       },
     );
