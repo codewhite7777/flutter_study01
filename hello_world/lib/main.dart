@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Hello World',
       home: MyHome(),
     );
@@ -29,24 +29,25 @@ class _MyHomeState extends State<MyHome> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: false,
-        title: Text('Hello World'),
+        title: const Text('Hello World'),
       ),
       body: Column(
         children: [
           Text(
             title,
-            style: TextStyle(fontSize: 36),
+            style: const TextStyle(fontSize: 36),
           ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          if (title == 'Hello')
+          if (title == 'Hello') {
             setState(() {
               title = 'World';
             });
+          }
         },
-        child: Icon(Icons.abc),
+        child: const Icon(Icons.abc),
       ),
     );
   }
