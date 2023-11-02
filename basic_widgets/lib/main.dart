@@ -50,6 +50,28 @@ class MyApp extends StatelessWidget {
                 ],
               ),
             ),
+        '/stack': (BuildContext) => DefaultLayoutScreen(
+              appbarTitle: 'Stack',
+              child: Stack(
+                children: [
+                  CustomContainer(
+                    width: 100,
+                    height: 100,
+                    color: Colors.red,
+                  ),
+                  CustomContainer(
+                    width: 80,
+                    height: 80,
+                    color: Colors.green,
+                  ),
+                  CustomContainer(
+                    width: 60,
+                    height: 60,
+                    color: Colors.blue,
+                  ),
+                ],
+              ),
+            ),
       },
     );
   }

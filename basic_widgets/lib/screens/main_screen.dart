@@ -30,6 +30,12 @@ class MainScreen extends StatelessWidget {
             },
             child: Text('Row Widget'),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed('/stack');
+            },
+            child: Text('Stack Widget'),
+          ),
         ],
       ),
     );
