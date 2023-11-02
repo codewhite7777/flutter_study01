@@ -72,6 +72,46 @@ class MyApp extends StatelessWidget {
                 ],
               ),
             ),
+        '/singlechildscrollview': (BuildContext) => DefaultLayoutScreen(
+              appbarTitle: 'SingleChildScroll',
+              child: SingleChildScrollView(
+                child: ListBody(
+                  children: [
+                    ...List.generate(
+                      100,
+                      (index) => ListTile(
+                        title: Text('$index'),
+                      ),
+                    ).toList(),
+                  ],
+                ),
+              ),
+            ),
+        '/listview': (BuildContext) => DefaultLayoutScreen(
+              appbarTitle: 'ListView',
+              child: ListView(
+                children: [
+                  ListTile(
+                    title: Text('Home'),
+                    leading: Icon(Icons.home),
+                    trailing: Icon(Icons.navigate_next),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    title: Text('Event'),
+                    leading: Icon(Icons.event),
+                    trailing: Icon(Icons.navigate_next),
+                    onTap: () {},
+                  ),
+                  ListTile(
+                    title: Text('Camera'),
+                    leading: Icon(Icons.camera),
+                    trailing: Icon(Icons.navigate_next),
+                    onTap: () {},
+                  ),
+                ],
+              ),
+            ),
       },
     );
   }
