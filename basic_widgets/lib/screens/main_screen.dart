@@ -18,6 +18,12 @@ class MainScreen extends StatelessWidget {
             },
             child: Text('Container Widget'),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed('/column');
+            },
+            child: Text('Column Widget'),
+          ),
         ],
       ),
     );

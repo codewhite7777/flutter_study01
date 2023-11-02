@@ -1,3 +1,4 @@
+import 'package:basic_widgets/component/custom_container.dart';
 import 'package:basic_widgets/screens/default_layout.dart';
 import 'package:basic_widgets/screens/main_screen.dart';
 import 'package:flutter/material.dart';
@@ -15,12 +16,22 @@ class MyApp extends StatelessWidget {
         '/': (BuildContext) => MainScreen(),
         '/container': (BuildContext) => DefaultLayoutScreen(
               appbarTitle: 'container',
-              child: Container(
-                width: 100,
-                height: 100,
-                color: Colors.red,
-                padding: EdgeInsets.all(8.0),
-                margin: EdgeInsets.all(8.0),
+              child: CustomContainer(),
+            ),
+        '/column': (BuildContext) => DefaultLayoutScreen(
+              appbarTitle: 'column',
+              child: Column(
+                children: [
+                  CustomContainer(
+                    color: Colors.red,
+                  ),
+                  CustomContainer(
+                    color: Colors.green,
+                  ),
+                  CustomContainer(
+                    color: Colors.blue,
+                  ),
+                ],
               ),
             ),
       },
