@@ -191,6 +191,14 @@ class MyApp extends StatelessWidget {
                 ],
               ),
             ),
+        '/sizedbox': (BuildContext) => DefaultLayoutScreen(
+              appbarTitle: 'SizedBox',
+              child: SizedBox(
+                width: 100,
+                height: 100,
+                child: Container(color: Colors.red),
+              ),
+            ),
       },
     );
   }
