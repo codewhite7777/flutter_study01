@@ -15,12 +15,28 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (BuildContext) => MainScreen(),
         '/container': (BuildContext) => DefaultLayoutScreen(
-              appbarTitle: 'container',
+              appbarTitle: 'Container',
               child: CustomContainer(),
             ),
         '/column': (BuildContext) => DefaultLayoutScreen(
-              appbarTitle: 'column',
+              appbarTitle: 'Column',
               child: Column(
+                children: [
+                  CustomContainer(
+                    color: Colors.red,
+                  ),
+                  CustomContainer(
+                    color: Colors.green,
+                  ),
+                  CustomContainer(
+                    color: Colors.blue,
+                  ),
+                ],
+              ),
+            ),
+        '/row': (BuildContext) => DefaultLayoutScreen(
+              appbarTitle: 'Row',
+              child: Row(
                 children: [
                   CustomContainer(
                     color: Colors.red,
