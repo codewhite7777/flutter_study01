@@ -214,6 +214,35 @@ class MyApp extends StatelessWidget {
                 ),
               ),
             ),
+        '/button': (BuildContext) => DefaultLayoutScreen(
+              appbarTitle: 'Buttons',
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: Text('Elevated Button'),
+                  ),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text('Text Button'),
+                  ),
+                  OutlinedButton(
+                    onPressed: () {},
+                    child: Text('OutlinedButton'),
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.home),
+                  ),
+                  FloatingActionButton(
+                    onPressed: () {},
+                    child: Icon(Icons.add),
+                  ),
+                ],
+              ),
+            ),
       },
     );
   }
