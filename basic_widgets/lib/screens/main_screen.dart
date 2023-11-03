@@ -114,6 +114,36 @@ class MainScreen extends StatelessWidget {
             },
             child: Text('Button Widgets'),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed('/text');
+            },
+            child: Text('Text Widget'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed('/image');
+            },
+            child: Text('Image Widget'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed('/icon');
+            },
+            child: Text('Icon Widget'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed('/progress');
+            },
+            child: Text('Progress Widgets'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed('/circleavatar');
+            },
+            child: Text('CircleAvatar Widget'),
+          ),
         ],
       ),
     );

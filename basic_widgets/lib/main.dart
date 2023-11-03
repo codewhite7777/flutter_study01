@@ -243,6 +243,40 @@ class MyApp extends StatelessWidget {
                 ],
               ),
             ),
+        '/text': (BuildContext) => DefaultLayoutScreen(
+              appbarTitle: 'Text',
+              child: Text(
+                'Hello world',
+                style: TextStyle(color: Colors.red, fontSize: 30),
+              ),
+            ),
+        '/image': (BuildContext) => DefaultLayoutScreen(
+              appbarTitle: 'Image',
+              child: Image.network(
+                  'https://cdn.pixabay.com/photo/2023/09/26/06/45/bride-8276620_1280.jpg'),
+            ),
+        '/icon': (BuildContext) => DefaultLayoutScreen(
+              appbarTitle: 'Icon',
+              child: Icon(Icons.home, color: Colors.red, size: 60),
+            ),
+        '/progress': (BuildContext) => DefaultLayoutScreen(
+              appbarTitle: 'Progress',
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  CircularProgressIndicator(),
+                  LinearProgressIndicator(),
+                ],
+              ),
+            ),
+        '/circleavatar': (BuildContext) => DefaultLayoutScreen(
+              appbarTitle: 'CircleAvatar',
+              child: CircleAvatar(
+                radius: 150.0,
+                backgroundImage: NetworkImage(
+                    'https://cdn.pixabay.com/photo/2023/09/26/06/45/bride-8276620_1280.jpg'),
+              ),
+            ),
       },
     );
   }
