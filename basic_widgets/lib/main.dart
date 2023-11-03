@@ -199,6 +199,21 @@ class MyApp extends StatelessWidget {
                 child: Container(color: Colors.red),
               ),
             ),
+        '/card': (BuildContext) => DefaultLayoutScreen(
+              appbarTitle: 'Card',
+              child: Center(
+                child: Card(
+                  child: Container(
+                    width: 200,
+                    height: 200,
+                  ),
+                  elevation: 3.0,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(16.0)),
+                  ),
+                ),
+              ),
+            ),
       },
     );
   }

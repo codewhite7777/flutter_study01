@@ -102,6 +102,12 @@ class MainScreen extends StatelessWidget {
             },
             child: Text('SizedBox Widget'),
           ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed('/card');
+            },
+            child: Text('Card Widget'),
+          ),
         ],
       ),
     );
